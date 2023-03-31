@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-import { HashLink } from 'react-router-hash-link';
+import navIcon4 from '../assets/img/nav-icon4.svg';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -41,18 +41,20 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#experiences" className={activeLink === 'experiences' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experiences')}>Experiences</Nav.Link>
-              <Nav.Link href="#blog" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blog')}>Blog</Nav.Link>
+              <Nav.Link href="#aboutme" className={activeLink === 'aboutme' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('aboutme')}>About</Nav.Link>
+              <Nav.Link href="#experiences" className={activeLink === 'experiences' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experiences')}>Work</Nav.Link>
+              {/* <Nav.Link href="#blog" className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blog')}>Blog</Nav.Link> */}
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/dominickblanco/" without rel="noopener noreferrer" target="_blank"><img src={navIcon1} alt="" /></a>
                 <a href="https://www.instagram.com/domthebomb._/" without rel="noopener noreferrer" target="_blank"><img src={navIcon2} alt="" /></a>
                 <a href="https://twitter.com/DominickBlanco2" without rel="noopener noreferrer" target="_blank"><img src={navIcon3} alt="" /></a>
+                <a href="https://github.com/Dblanco-code" without rel="noopener noreferrer" target="_blank"><img src={navIcon4} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
+              {/* <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              </HashLink> */}
             </span>
           </Navbar.Collapse>
         </Container>
