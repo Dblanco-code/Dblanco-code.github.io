@@ -369,7 +369,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,11 +378,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx img {
   width: 75%;
   object-fit: cover;
+  margin-top: 0px;
 }
 
 .proj-txtx {
   position: absolute;
   text-align: center;
+  margin-bottom: 35px;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
